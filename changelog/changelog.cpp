@@ -46,7 +46,8 @@ int main() {
         getline(cin, level[i].above);
 }
     }
-    cout << "**Changelog Classic List " << date << "**\n";
+    cout << "**Changelog Classic List " << date << "**\n\n"
+    << "***Level mới***\n";
     for(int i = 0; i < n; i++) {
 if(level[i].below != "ko"){
         cout << i + 1 << ". "
@@ -60,7 +61,7 @@ if(level[i].below != "ko"){
     else{       
         cout << i + 1 << ". "
              "**["<< level[i].name << "]("
-             << level[i].link << ")** được đặt ở vị trí **~#"
+             << level[i].link << ")** được đặt ở vị trí **#~"
              << level[i].placement
              << "**.\n";
     }
