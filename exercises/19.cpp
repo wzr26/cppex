@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <fstream>
 using namespace std;
 
 struct Student {
@@ -35,5 +36,16 @@ int main() {
         cout << "Age: " << students[i].age << "\n";
     }
 
+    ofstream file("students.txt");
+
+    for(int i = 0; i < students.size(); i++){
+        file << students[i].id
+             << "|"
+             << students[i].name
+             << "|"
+             << students[i].age
+             << "\n";
+
+    }
     return 0;
 }
