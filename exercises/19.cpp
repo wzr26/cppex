@@ -12,7 +12,9 @@ struct Student {
 int main() {
 
     vector<Student> students;
-
+    
+    ifstream file("students.txt");
+    
     Student s;
 
     cout << "ID: ";
